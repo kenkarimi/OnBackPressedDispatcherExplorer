@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void handleOnBackPressed() {
                 if(exit) {
-                    //getOnBackPressedDispatcher().onBackPressed(); //Default. Replaces super.onBackPressed(). Whether it's going back to the previous activity or exiting.
+                    //getOnBackPressedDispatcher().onBackPressed(); //executes default operation. Replaces super.onBackPressed(). Whether it's going back to the previous activity or exiting.
                     finish();
                 } else {
                     Toast.makeText(MainActivity.this, "Back button pressed", Toast.LENGTH_SHORT).show();
